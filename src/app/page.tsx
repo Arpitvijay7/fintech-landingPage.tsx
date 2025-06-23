@@ -123,7 +123,7 @@ type SpotlightProps = {
   fill?: string;
 };
 
-export const Spotlight = ({ className, fill }: SpotlightProps) => {
+const Spotlight = ({ className, fill }: SpotlightProps) => {
   return (
     <svg
       className={cn(
@@ -180,7 +180,7 @@ interface SplineSceneProps {
   className?: string;
 }
 
-export function SplineScene({ scene, className }: SplineSceneProps) {
+function SplineScene({ scene, className }: SplineSceneProps) {
   const splineRef = useRef<any>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
